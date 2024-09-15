@@ -1,5 +1,6 @@
-from Scripts.testme import var_sum
+#from Scripts.testme import var_sum
 
+# for var_sum / input int & float <<< >>>
 var_integer = 8
 var_float = 6.5
 

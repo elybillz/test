@@ -7,19 +7,19 @@ print(name)
 print("ely")
 print("rita")
 
-#for like border top
+#for like border top <<< >>>
 print("=============")
 
-# allign inline
+# allign inline <<< >>>
 print("mary \t mose\t cy \t gift" )
 print("=============")
 
-#allign block
+#allign block <<< >>>
 print(" corn \n mango \n apple")
 
 print("hannah", " " "mother", sep=",", end=".")
 
-#for line br
+#for line br <<< >>>
 print("\n")
 
 print("hannah", "mother", sep=",", end=".")
@@ -28,7 +28,7 @@ message = "start processing"
 print(message)
 print(message.center(50, "="))
 
-#print using format
+#print using format <<< >>>
 name = "eleazar"
 city = "asaba"
 work = "siemician"
@@ -36,7 +36,7 @@ print(name + " live in ", city + " and he works as a ", work )
 print("{} live in {} and he works as a {}.".  format(name, city, work) )
 
 
-#if condition
+#if condition <<< >>>
 raining = True
 score = 200
 if raining:
@@ -46,11 +46,13 @@ else:
 
 print("-----------")
 
+# if condition for score <<< >>>
 if score >= 300:
     print("score greater than 300")
 else:
     print("score not greater than 300")
 
+# if condition for  input movies wit elif <<< >>>
 movie1_tickets_available = 3
 movie2_tickets_available = 5
 movie3_tickets_available = 8
@@ -67,4 +69,6 @@ elif movie_selected == "movie3" and int(count) <= movie3_tickets_available:
     print("here are your tickets - {}".format(movie_selected))
 else:
     print("requested ticket amount not available!")
-    
+
+
+print(".......print..........")
