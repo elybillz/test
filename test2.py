@@ -2,73 +2,45 @@ from itertools import count
 from operator import truediv
 
 
-name = "john"
-print(name)
-print("ely")
-print("rita")
+# if condition for score wit elif <<< >>>
+score = 99
+if score < 100:
+    print("score lesser than 100")
+elif score == 100:
+    print("score is equal to 100")
+elif score > 100:
+    print("score is greater than 100")
 
-#for like border top <<< >>>
-print("=============")
+print("---------------")
 
-# allign inline <<< >>>
-print("mary \t mose\t cy \t gift" )
-print("=============")
+# while condition for loop <<< >>>
+x = 0
+while x <= 10:
+    print('i am inside the loop : ' + str(x))
+    print('>>>> incremented to ' + str(x))
+    x += 1
+    if x == 3:
+        print('found : 3 ')
+        continue
 
-#allign block <<< >>>
-print(" corn \n mango \n apple")
+print('<<< This is the value of X >>> ')
 
-print("hannah", " " "mother", sep=",", end=".")
+#  the "for" loop condition <<< >>>
+print('--------------------------------------------')
+for x in "ely", "billz", "is", "a", "tech", "bro":
+        print('>>> ' + str(x))
 
-#for line br <<< >>>
-print("\n")
+# for list class <<< >>>
+name = ["JOY", "peter", "mark"]
+no = [1, 2, 3, 4,]
+print(name [1:2])
+print(no [:-3])
+print(name.index('mark'))
+print(name.index("peter") )
+print(type(name))
 
-print("hannah", "mother", sep=",", end=".")
-
-message = "start processing"
-print(message)
-print(message.center(50, "="))
-
-#print using format <<< >>>
-name = "eleazar"
-city = "asaba"
-work = "siemician"
-print(name + " live in ", city + " and he works as a ", work )
-print("{} live in {} and he works as a {}.".  format(name, city, work) )
-
-
-#if condition <<< >>>
-raining = True
-score = 200
-if raining:
- print("yes it is raining")
-else:
-    print("no is not raining")
-
-print("-----------")
-
-# if condition for score <<< >>>
-if score >= 300:
-    print("score greater than 300")
-else:
-    print("score not greater than 300")
-
-# if condition for  input movies wit elif <<< >>>
-movie1_tickets_available = 3
-movie2_tickets_available = 5
-movie3_tickets_available = 8
-
-movie_selected = input('which moive package do you want? :')
-count = input('pls select numbers of ticket ')
-if movie_selected == "movie1" and int(count) <= movie1_tickets_available:
-    print("here are your tickets - {}".format(movie_selected))
-
-elif movie_selected == "movie2" and int(count) <= movie2_tickets_available:
-    print("here are your tickets - {}".format(movie_selected))
-
-elif movie_selected == "movie3" and int(count) <= movie3_tickets_available:
-    print("here are your tickets - {}".format(movie_selected))
-else:
-    print("requested ticket amount not available!")
-
-
-print(".......print..........")
+# for list combination <<< >>>
+print(name + no)
+newl = no * 2
+print(newl)
+print('--------------------------------------------')
