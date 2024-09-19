@@ -1,4 +1,6 @@
+from twisted.internet.iocpreactor.tcp import Client
 
+# dict with integer keys << >>
 
 print('dictionary with integer keys'.center(50, ('-')))
 print('\n')
@@ -7,6 +9,7 @@ dict_int = {1: 'mango', 2: 'apple', 3: 'dog' }
 print("dict_int :", dict_int)
 print("dict_int type :", type(dict_int))
 
+# dict with strings keys << >>
 print('dictionary with strings keys'.center(50, ('-')))
 print('\n')
 
@@ -14,6 +17,7 @@ dict_str = {'Fruit': 'Mango', 'Animal': 'dog', 'name': 'ely' }
 print("dict_str :", dict_str)
 print("dict_str type :", type(dict_str))
 
+# dict with mixed keys << >>
 print('dictionary with mixed keys'.center(50, ('-')))
 print('\n')
 
@@ -21,6 +25,7 @@ dict_mix = {'Dept': 'Drills', 'Progrm': ['7214/2245-2295'], 73: 'Total'  }
 print("dict_mix :", dict_mix)
 print("dict_mix type :", type(dict_mix))
 
+# dict with function () << >>
 print('dictionary ()'.center(50, ('-')))
 print('\n')
 
@@ -31,36 +36,81 @@ print("dict_funt type :", type(dict_funt))
 print('End '.center(50, ('-')))
 print('\n')
 
+# dict membership type 1 << >>
+
+print('Dict membership '.center(50, ('-')))
+
 emplo_id = { 'ID-2001': 'Nwoye Emeka',
              'ID-2002': 'Jack Unknown',
-             'ID-2003': 'Timothy Ekong'
+             'ID-2003': 'Timothy Ekong',
+             'ID-2004': 'Pius Beke',
            }
 emp_id = 'ID-2002'
 if emp_id in emplo_id:
     name = emplo_id [emp_id]
-    print('Employee ID is {}, Employee name is {}'.format(emp_id, name))
+    print('Employee ID is: {}, Employee name is: {}'.format(emp_id, name))
 else:
     print('Employee ID {}, not found'.format(emp_id) )
 
 print('\n')
 
+
+print('Membership using if, elif and input class :')
+
+# membership using input my code proud me !!! << >>
+
+id_selected = input('Enter ID No :')
 emp_0 = 'ID-2001'
 emp_1 = 'ID-2002'
 emp_2 = 'ID-2003'
-
-id_selected = input('Enter ID No :')
-if id_selected in emplo_id == emp_0:
-    name = emplo_id [emp_0]
-    print('Employee ID is {}, Employee name is {}'.format(emp_0, name))
-elif id_selected in emplo_id == emp_1:
-    name1 = emplo_id[emp_1]
-    print('Employee ID is {}, Employee name is {}'.format(emp_1, name1))
-elif id_selected in emplo_id == emp_2:
-    name2 = emplo_id[emp_2]
-    print('Employee ID is {}, Employee name is {}'.format(emp_2, name2))
+emp_3 = 'ID-2004'
+if id_selected == emp_0 in emplo_id:
+    name = str(emplo_id [emp_0])
+    print('Employee ID is: {}, Employee Name is: {}'.format(emp_0, name))
+elif id_selected == emp_1 in emplo_id:
+    name = str(emplo_id [emp_1])
+    print('Employee ID is: {}, Employee Name is: {}'.format(emp_1, name))
+elif id_selected == emp_2 in emplo_id:
+    name = emplo_id[emp_2]
+    print('Employee ID is: {}, Employee Name is: {}'.format(emp_2, name))
+elif id_selected == emp_3 in emplo_id:
+    name = emplo_id[emp_3]
+    print('Employee ID is: {}, Employee Name is: {}'.format(emp_3, name))
 else:
     print('Employee ID not found' )
 
+print('End '.center(50, ('-')))
+print('\n')
+
+emplo_info = { 'Name': 'Nwoye Emeka',
+             'Depart': 'Client QC',
+             'Date of employment': '01/12/2022',
+             'Salary': '#130,000.00'
+           }
+name = emplo_info.get('Name')
+dpt = emplo_info.get('Depart')
+date = emplo_info.get('Date of employment')
+salary = emplo_info.get('Salary')
+
+print('{} Works in Dpt of: {}. Job engagement Date: {}. Salary or rate: {}'.format(name, dpt, date, salary ))
+
+print('-----')
 
 
+emplo_info['Depart'] = 'Client QC'
+emplo_info['Salary'] = '#200,000.00'
 
+Depart = emplo_info.get('Depart')
+Salary = emplo_info.get('Salary')
+print('{} Works in Dpt of: {}. Job engagement Date: {}. Salary or rate: {}'.format(name, Depart, date, Salary ))
+
+emplo_info["Camp"] = "Jagioo Energy"
+emplo_info["Position"] = "Super Qc"
+emplo_info["Rank"] = "2"
+
+print(emplo_info.get)
+
+# to del list & empty list <<< >>>
+# del emplo_ifo
+# emplo_ifo = []  <#or> emplo_ifo.clear()
+# emplo_ifo.pop()
