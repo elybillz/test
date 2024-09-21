@@ -1,5 +1,5 @@
-from IPython.core.guarded_eval import dict_keys
-from mypyc.primitives.dict_ops import dict_item_iter_op
+
+
 
 # dictionary using keys << >>
 
@@ -52,3 +52,21 @@ print('<< unpack  itmes >>')
 
 for dict_item, name in emplo_id.items():
     print(dict_item + ' : ' + name)
+
+
+print('\n')
+print('dict using list for long list object and sort in dict'.center(70, ('-')))
+print('\n')
+
+qc_list = {'name': ['nwoye', 'emeka', 'joy', 'peace'],
+           'No': [1,2,15,3,4, 13,5,6,7,8,9,10],
+           'star': [2,3,1,1,2,1,1,3,1,1,],
+
+
+          }
+
+dict_list = list(qc_list.keys())
+print('dict_using_list ', dict_list)
+dict_list.sort()
+print('dict_list.sort', dict_list)
+

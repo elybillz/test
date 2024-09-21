@@ -1,4 +1,3 @@
-from operator import index
 
 # for list_nested <<< >>>
 
@@ -70,6 +69,7 @@ print('end'.center(50, ('-')))
 # to copy object to new list <<< >>>
 #list_nested2 = list_nested1.copy()
 #print('new', list_nested2 )
+# for list_nested <<< >>>
 
 
 

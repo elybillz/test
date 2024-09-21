@@ -1,5 +1,3 @@
-from itertools import count
-from operator import truediv
 
 
 # if condition for score wit elif <<< >>>
@@ -44,3 +42,4 @@ print(name + no)
 newl = no * 2
 print(newl)
 print('--------------------------------------------')
+

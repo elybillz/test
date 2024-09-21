@@ -1,3 +1,4 @@
+
 from twisted.internet.iocpreactor.tcp import Client
 
 # dict with integer keys << >>
@@ -25,8 +26,8 @@ dict_mix = {'Dept': 'Drills', 'Progrm': ['7214/2245-2295'], 73: 'Total'  }
 print("dict_mix :", dict_mix)
 print("dict_mix type :", type(dict_mix))
 
-# dict with function () << >>
-print('dictionary ()'.center(50, ('-')))
+# dict with function ()  for list > [[ ]] and tuple > (( ))   << >>
+print('dictionary with () '.center(50, ('-')))
 print('\n')
 
 dict_funt = dict({'Dpt': 'Client', 'Sub dpt': 'Qc', 'name': "Emeka" })
@@ -114,3 +115,5 @@ print(emplo_info.get)
 # del emplo_ifo
 # emplo_ifo = []  <#or> emplo_ifo.clear()
 # emplo_ifo.pop()
+
+

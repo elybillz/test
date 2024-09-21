@@ -1,6 +1,4 @@
-from itertools import count
 
-from numba.cuda.simulator.reduction import reduce
 
 # set is unordered and no index, it is immutable, e.g > union & intersection <<< >>>
 # union will merge objects A and B, and rep duplicate once <<< >>>
@@ -136,23 +134,24 @@ set_2 = {'a', 'b','a','f'}
 set_3 = {1,2,3,4}
 set_4 = {'b', 'c', 'a'}
 
-
-print('length of set_1 :', len(set_1))
-print('any of set_2 :', any(set_2))
-print('all of set_4 :', all(set_2))
-print('max value of set_3 :', max(set_3))
-print('min value of set_3 :', min(set_3))
-print('max value of set_1 :', max(set_1))
-print('min value of set_1 :', min(set_1))
-print('sorted set_1', sorted(set_1))
-print('rev-sorted set_3', sorted(set_3, reverse=True))
-print('sorted set_4', sorted(set_4))
-print('sum set_1', sum(set_1))
+# for max or min, len, any or all boolean, sorted or sum << >>
+print('length of set_1 >>', len(set_1))
+print('any of set_2 >>', any(set_2))
+print('all of set_4 >>', all(set_2))
+print('max value of set_3 >>', max(set_3))
+print('min value of set_3 >>', min(set_3))
+print('max value of set_1 >>', max(set_1))
+print('min value of set_1 >>', min(set_1))
+print('sorted set_1 >>', sorted(set_1))
+print('rev-sorted set_3 >>', sorted(set_3, reverse=True))
+print('sorted set_4 >>', sorted(set_4))
+print('sum set_1 >>', sum(set_1))
 
 set_5 = set_1, set_2
-print('set_5', set_5)
+print('set_5 :', set_5)
 
 # can't add nor remove
 set_6 = frozenset([1,2,3,])
+
 
 

@@ -1,7 +1,8 @@
+
+
 #from Scripts.testme import var_sum
 
-
-# numbers e.g integer, boolean, float, complex numbers << >>>
+# numbers e.g. integer, boolean, float, complex numbers << >>>
 # for var_sum / input int & float <<< >>>
 
 
@@ -93,7 +94,7 @@ elif movie_selected == "movie2" and int(count) <= movie2_tickets_available:
 elif movie_selected == "movie3" and int(count) <= movie3_tickets_available:
     print("here are your tickets - {}".format(movie_selected))
 else:
-    print("requested ticket amount not available!")
+    print("requested ticket amount not available or wrong input!")
 
 
 print(".......print..........")
