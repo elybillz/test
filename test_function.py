@@ -1,3 +1,4 @@
+from odbc import dataError
 from param.ipython import message
 
 # function << >>
@@ -143,7 +144,7 @@ print('The reminder of {} and {} : {}'.format(num3, num4, str(cal_reminder(num3,
 print('The quotient of {} and {} : {}'.format(num3, num4, str(cal_quotient(num3, num4))))
 
 
-# part 2 << >>
+# part 3 << >>
 print('\n')
 print('PART 3-FORMAT3......convert.......to.....function....input...method...>>>>>')
 
@@ -167,22 +168,70 @@ def cal_quotient(num5, num6):
 
 user_data_1 = input('Enter value for num5 : ')
 user_data_2 = input('Enter value for num6 : ')
-user_data_3 = input('Enter value for num7 : ')
 
-num5 = str(user_data_1)
-num6 = str(user_data_2)
-num7 = str(user_data_3)
 
-user_data = num6 + num6 + num7
-if seleted_num == user_data == cal_sum:
-    print('The sum of {} and {} : {}'.format(num5, num6, str(cal_sum(num5, num6))))
-elif seleted_num == int(user) == cal_diff:
-    print('The diff of {} and {} : {}'.format(num5, num6, str(cal_diff(num5, num6))))
-elif seleted_num == int(user) == cal_prod:
-    print('The prod of {} and {} : {}'.format(num5, num6, str(cal_prod(num5, num6))))
-elif seleted_num == int(user) == cal_div:
-    print('The div of {} and {} : {}'.format(num5, num6, str(cal_div(num5, num6))))
-elif seleted_num == int(user) == cal_reminder:
-    print('The reminder of {} and {} : {}'.format(num5, num6, str(cal_reminder(num5, num6))))
-elif seleted_num == int(user) == cal_quotient:
-    print('The quotient of {} and {} : {}'.format(num5, num6, str(cal_quotient(num5, num6))))
+num5 = int(user_data_1)
+num6 = int(user_data_2)
+
+print('The sum of {} and {} : {}'.format(num5, num6, str(cal_sum(num5, num6))))
+print('The diff of {} and {} : {}'.format(num5, num6, str(cal_diff(num5, num6))))
+print('The prod of {} and {} : {}'.format(num5, num6, str(cal_prod(num5, num6))))
+print('The div of {} and {} : {}'.format(num5, num6, str(cal_div(num5, num6))))
+print('The reminder of {} and {} : {}'.format(num5, num6, str(cal_reminder(num5, num6))))
+print('The quotient of {} and {} : {}'.format(num5, num6, str(cal_quotient(num5, num6))))
+
+
+
+# part 4 using while True loop  << >>
+print('\n')
+print('PART 4-FORMAT4......convert.......to.....function...while..True.input...method...>>>>>')
+
+
+def cal_sum(num7, num8):
+    return num7 + num8
+
+
+def cal_diff(num7, num8):
+    return num7 - num8
+
+
+def cal_prod(num7, num8):
+    return num7 * num8
+
+
+def cal_div(num7, num8):
+    return num7 / num8
+
+
+def cal_reminder(num7, num8):
+    return num7 % num8
+
+
+def cal_quotient(num7, num8):
+    return num7 // num8
+
+
+while True:
+    user1 = input('Enter num7 :')
+    if(user1.isdigit()):
+        num7 = int(user1)
+        break
+    else:
+        print('Please enter digit value !! ')
+
+while True:
+    user2 = input('Enter num8 :')
+    if(user2.isdigit()):
+        num8 = int(user2)
+        break
+    else:
+        print('Please enter digit value !! ')
+
+
+print('The sum of {} and {} : {}'.format(num7, num8, str(cal_sum(num7, num8))))
+print('The diff of {} and {} : {}'.format(num7, num8, str(cal_diff(num7, num8))))
+print('The prod of {} and {} : {}'.format(num7, num8, str(cal_prod(num7, num8))))
+print('The div of {} and {} : {}'.format(num7, num8, str(cal_div(num7, num8))))
+print('The reminder of {} and {} : {}'.format(num7, num8, str(cal_reminder(num7, num8))))
+print('The quotient of {} and {} : {}'.format(num7, num8, str(cal_quotient(num7, num8))))
+

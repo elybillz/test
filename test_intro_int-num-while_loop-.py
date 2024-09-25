@@ -1,6 +1,6 @@
 
 
-#from Scripts.testme import var_sum
+
 
 # numbers e.g. integer, boolean, float, complex numbers << >>>
 # for var_sum / input int & float <<< >>>
